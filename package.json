@@ -1,0 +1,10 @@
+{
+  "name": "mjsz-portfolio-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Maciej Zachariasz <47660926+vroeN2@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
