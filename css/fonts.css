@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'arialichollow';
+    src: url('../fonts/arialic_hollow-webfont.woff') format('woff'),
+         url('../fonts/arialic_hollow-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.outline-bg-text {
+    font-family: 'arialichollow', serif;
+    user-select: none;
+    z-index: -1;
+}
+
+.text-lg {
+    font-size: 10rem;
+}
