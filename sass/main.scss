@@ -1,21 +1,10 @@
 //custom variables
-
+$font-size-base: 3rem;
 
 // import the functions & variables
 @import "../node_modules/bootstrap/scss/_functions";
 @import "../node_modules/bootstrap/scss/_variables";
-
-// custom theme colours
-$custom-theme-colors: (
-  "altlight": #f2ebfa,
-  "altdark": #522192,
-  "gold": #c29938,
-  "darkgreyblue": #1f1f28,
-  "ocean": #03CEA4,
-  "lightgreyblue": #ADC7FF,
-  "yellowaccent": #FFFA5C,
-  "darkgrey": #1b1b1b
-);
+@import "./variables";
 
 $theme-colors: map-merge($theme-colors, $custom-theme-colors); 
 
@@ -31,6 +20,8 @@ $utilities-colors: map-merge(
 
 $utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
 $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
+
+$display-font-sizes: map-merge($display-font-sizes, $custom-font-sizes);
 
 // import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';

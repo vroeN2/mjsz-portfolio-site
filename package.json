@@ -5,6 +5,10 @@
   "author": "Maciej Zachariasz <47660926+vroeN2@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^5.1.3"
+    "bootstrap": "^5.1.3",
+    "gulp": "^4.0.2",
+    "gulp-purgecss": "^4.0.3",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.43.4"
   }
 }
