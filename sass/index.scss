@@ -9,12 +9,17 @@
   box-sizing: border-box;
 }
 
+.logo {
+    font-size: 1rem;
+}
+
 .about {
   height: 100vh;
   display: flex;
   align-items: center;
+}
 
-  a {
+.hover-link {
     color: white;
     text-decoration: none;
     transition: 0.1s visibility ease;
@@ -40,6 +45,9 @@
         animation-fill-mode: forwards;
     }
   }
+
+.outline-bg-text {
+    top: -5rem;
 }
 
 @keyframes hover-v {

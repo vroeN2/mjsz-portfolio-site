@@ -18,5 +18,13 @@ $custom-theme-colors: (
     "ocean": $ocean,
     "lightgreyblue": $lightgreyblue,
     "yellowaccent": $yellowaccent,
-    "darkgrey": $darkgrey
+    "darkgrey": $darkgrey,
+    "opaqueocean": $opaqueocean
+);
+
+$custom-font-sizes: (
+    0: 6rem,
+    "bg": 8rem,
+    "bg-xl": 10rem,
+    "bg-xxl": 13rem
 );

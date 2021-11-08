@@ -1,5 +1,5 @@
 //custom variables
-$font-size-base: 1.5rem;
+$font-size-base: 3rem;
 
 // import the functions & variables
 @import "../node_modules/bootstrap/scss/_functions";
@@ -20,6 +20,8 @@ $utilities-colors: map-merge(
 
 $utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
 $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
+
+$display-font-sizes: map-merge($display-font-sizes, $custom-font-sizes);
 
 // import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
