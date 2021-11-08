@@ -1,0 +1,22 @@
+// custom theme colours
+$altlight: #f2ebfa;
+$altdark: #522192;
+$gold: #c29938;
+$darkgreyblue: #1f1f28;
+$ocean: #03CEA4;
+$lightgreyblue: #ADC7FF;
+$yellowaccent: #FFFA5C;
+$darkgrey: #1b1b1b;
+$opaqueocean: #15463C;
+
+
+$custom-theme-colors: (
+    "altlight": $altlight,
+    "altdark": $altdark,
+    "gold": $gold,
+    "darkgreyblue": $darkgreyblue,
+    "ocean": $ocean,
+    "lightgreyblue": $lightgreyblue,
+    "yellowaccent": $yellowaccent,
+    "darkgrey": $darkgrey
+);

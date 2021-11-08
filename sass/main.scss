@@ -1,21 +1,10 @@
 //custom variables
-
+$font-size-base: 1.5rem;
 
 // import the functions & variables
 @import "../node_modules/bootstrap/scss/_functions";
 @import "../node_modules/bootstrap/scss/_variables";
-
-// custom theme colours
-$custom-theme-colors: (
-  "altlight": #f2ebfa,
-  "altdark": #522192,
-  "gold": #c29938,
-  "darkgreyblue": #1f1f28,
-  "ocean": #03CEA4,
-  "lightgreyblue": #ADC7FF,
-  "yellowaccent": #FFFA5C,
-  "darkgrey": #1b1b1b
-);
+@import "./variables";
 
 $theme-colors: map-merge($theme-colors, $custom-theme-colors); 
 

@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/main.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
     <title>Maciej Zachariasz Portfolio Site</title>
     <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/extras.css">
+    <link rel="stylesheet" href="./css/index.css">
     <style>
         section {
             padding: 60px 0;
@@ -32,9 +32,9 @@
         <div class="container-lg rellax" id="about">
             <div class="row justify-content-center">
                 <div class="col-12-xs col-10-md">
-                    <span class="display-1 text-white">oi.</span>
-                    <p class="display-5 text-white" data-rellax-percentage="0.5">I'm Maciej, and I am an aspiring front-end dev.</p>
-                    <p class="display-5 text-ocean opacity-25 rellax" data-rellax-speed="1.2" data-rellax-percentage="0.5">currently I'm focused on learning new technologies. I love reading, board games and basketball.</p>
+                    <span class="display-1 text-white rellax mb-2 d-inline-block" data-rellax-speed="1.2" data-rellax-percentage="0.5">oi.</span>
+                    <p class="display-5 text-white rellax" data-rellax-speed="1.5" data-rellax-percentage="0.5">I'm <a href="">Maciej</a>, and I am an aspiring front-end dev.</p>
+                    <p class="display-5 text-ocean opacity-25 rellax" data-rellax-speed="1.7" data-rellax-percentage="0.5">currently I'm focused on learning new technologies.<br>I love reading, board games and basketball.</p>
                 </div>
             </div>
         </div>
@@ -43,29 +43,72 @@
     <section class="projects">
         <div class="container-lg">
             <div class="row justify-content-center">
-                <div class="col-12-xs col-10-md">
-                    <div class="display-4 text-white position-relative align-items-center rellax" data-rellax-percentage="0.5">
-                        <div class="display-1 text-ocean outline-bg-text opacity-25 position-absolute text-lg rellax" data-rellax-percentage="0.5" data-rellax-speed="2">My Projects</div>
+                <div class="col-12-xs col-10-md mb-2">
+                    <div class="display-4 text-white position-relative align-items-center mb-5 rellax" data-rellax-percentage="0.5" data-rellax-speed="1.1">
+                        <div class="text-ocean outline-bg-text opacity-25 position-absolute rellax" data-rellax-percentage="0.5" data-rellax-speed="1.2">My Projects</div>
                         A selection of some projects I've been working on.
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="container-lg">
+
+        <div class="container-lg mt-5">
             <div class="row gap-2">
-                <div class="col-12-xs col-10-md" data-rellax-percentage="0.5">
+                <div class="col-12-xs col-8-md my-5" data-rellax-percentage="0.5">
                     <a href="https://mjsz-scss-portfolio.netlify.app">
                         <img src="./assets/raven.png" class="img-fluid" alt="scss preview site">
                     </a>
-                    <h3 class="card-title m-1 text-ocean opacity-25">Raven SCSS</h3>
-                    <p class="m-1 text-white">Simple page created to practice scss usage</p>
+                    <h3 class="display-1 m-1 text-ocean opacity-25">Raven SCSS</h3>
+                    <p class="display-4 m-1 text-white lead">Simple page created to practice scss usage</p>
+                    <p class="display-5 m-1 text-white"><span class="text-ocean opacity-25">Used technologies:</span><br>html, css, bootstrap 5</br>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-lg mt-5">
+            <div class="row gap-2">
+                <div class="col-12-xs col-8-md my-5" data-rellax-percentage="0.5">
+                    <a href="https://mjsz-bootstrap.netlify.app">
+                        <img src="./assets/bootstrap.png" class="img-fluid" alt="scss preview site">
+                    </a>
+                    <h3 class="card-title m-1 text-ocean opacity-25">Bootstrap tutorial page</h3>
+                    <p class="m-1 text-white">Webpage created as a result of Bootstrap 5 tutorial.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-lg mt-5">
+            <div class="row gap-2">
+                <div class="col-12-xs col-8-md my-5" data-rellax-percentage="0.5">
+                    <a href="https://mjsz-react.netlify.app">
+                        <img src="./assets/blog_react.png" class="img-fluid" alt="scss preview site">
+                    </a>
+                    <h3 class="card-title m-1 text-ocean opacity-25">Raven Blog</h3>
+                    <p class="m-1 text-white">Blog page made with React.js and JSON server</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-lg mt-5">
+            <div class="row gap-2">
+                <div class="col-12-xs col-8-md my-5" data-rellax-percentage="0.5">
+                    <a href="https://mjsz-portfolio-project.netlify.app">
+                        <img src="./assets/portfolio_react.png" class="img-fluid" alt="scss preview site">
+                    </a>
+                    <h3 class="card-title m-1 text-ocean opacity-25">Portfolio preview</h3>
+                    <p class="m-1 text-white">Portfolio page idea made with React.js as EasyCode project task</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- guzik do zmiany języka -->
+    <!-- 
+        
+        guzik do zmiany języka 
+        smooth scrolling
+        mobilne kolory do poprawy
+    
+    -->
 
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
