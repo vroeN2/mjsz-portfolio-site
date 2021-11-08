@@ -21,9 +21,15 @@
 
 .hover-link {
     color: white;
-    text-decoration: none;
-    transition: 0.1s visibility ease;
+    text-decoration: underline;
+    text-decoration-color: $opaqueocean;
+    transition: 0.2s visibility ease;
     z-index: 1;
+
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
 
     &:before {
         content: "";
@@ -48,6 +54,15 @@
 
 .outline-bg-text {
     top: -5rem;
+}
+
+#footer {
+    font-size: 1rem;
+
+    a {
+        color: $opaqueocean;
+        text-decoration: none;
+    }
 }
 
 @keyframes hover-v {
