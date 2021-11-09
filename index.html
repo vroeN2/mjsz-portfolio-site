@@ -10,6 +10,7 @@
     <title>Maciej Zachariasz Portfolio Site</title>
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         section {
             padding: 60px 0;
@@ -20,10 +21,8 @@
 <body class="bg-darkgrey">
     <nav class="navbar">
         <div class="container-xxl">
-            <a class="navbar-brand" href="#">
-                <span class="logo text-white fw-bold">
-                    mjsz portfolio
-                </span>
+            <a href="#sidebar" class="d-block hover-link logo fw-bold mt-2" data-bs-toggle="offcanvas" role="button" data-bs-target="#sidebar" aria-controls="sidebar">
+                mjsz portfolio
             </a>
         </div>
     </nav>
@@ -31,9 +30,11 @@
     <section class="about">
         <div class="container-lg rellax" id="about">
             <div class="row justify-content-center">
-                <div class="col-12-xs col-10-md">
+                <div class="col-12-xs col-10-md" data-aos="fade-up">
                     <span class="display-1 text-white rellax mb-2 d-inline-block" data-rellax-speed="1.2" data-rellax-percentage="0.5">oi.</span>
+
                     <p class="display-5 text-white rellax" data-rellax-speed="1.7" data-rellax-percentage="0.5">I'm <a href="#" class="hover-link text-white">Maciej</a>, and I am a front-end dev.</p>
+
                     <p class="display-5 text-opaqueocean rellax" data-rellax-speed="2" data-rellax-percentage="0.5">currently I'm focused on learning new technologies.<br>I love reading, board games and basketball.</p>
                 </div>
             </div>
@@ -41,11 +42,12 @@
     </section>
 
     <section class="projects">
-        <div class="container-lg">
+        <div class="container-lg" data-aos="fade-up">
             <div class="row justify-content-center">
                 <div class="col-12-xs col-10-md mb-2">
                     <div class="display-4 text-center text-white position-relative align-items-center mb-5 rellax" data-rellax-percentage="0.5" data-rellax-speed="1.1">
                         <div class="display-bg-xl text-opaqueocean outline-bg-text position-absolute rellax" data-rellax-percentage="0.5" data-rellax-speed="1.2">My Projects</div>
+
                         A selection of some projects I've been working on.
                     </div>
                 </div>
@@ -54,96 +56,105 @@
 
         <div class="container-lg mt-5">
             <div class="row gap-2">
-                <div class="col-10-xs col-8-md my-5" data-rellax-percentage="0.5">
-                    <a href="https://mjsz-portfolio-project.netlify.app">
-                        <img src="./assets/portfolio_react.png" class="img-fluid" alt="scss preview site">
-                    </a>
+                <div class="col-10-xs col-8-md my-5">
+                    <div class="card preview" data-aos="fade-up">
+                        <a target="_blank" href="https://mjsz-portfolio-project.netlify.app">
+                            <img src="./assets/portfolio_react.png" class="img-fluid" alt="scss preview site">
+                        </a>
+                    </div>
 
                     <div class="row g-5 justify-content-between align-items-center">
-                        <div class="col-9">
+                        <div class="col-9" data-aos="fade-up">
                             <h3 class="display-2 m-1 text-opaqueocean">Portfolio preview</h3>
                         </div>
 
-                        <div class="col-3">
-                            <p class="display-7 m-1"><a class="hover-link" href="">code</a></p>
+                        <div class="col-3" data-aos="fade-up" data-aos-delay="500">
+                            <p class="display-7 m-1"><a class="hover-link" target="_blank" href="https://bitbucket.org/vroeN_/project-01-remaster/src/dev/">code</a></p>
                         </div>
                     </div>
 
-                    <p class="display-5 m-1 text-white lead">Portfolio page idea made with React.js as EasyCode project task</p>
+                    <p class="display-5 m-1 text-white lead" data-aos="fade-up" data-aos-delay="600">Portfolio page idea made with React.js as EasyCode project task</p>
 
-                    <p class="display-6 m-1 text-white"><span class="text-opaqueocean">Used technologies:</span><br>html, css, javascript, React.js, parallax, styled-components, react-router-dom</p>
+                    <p class="display-6 m-1 text-white" data-aos="fade-up" data-aos-delay="700"><span class="text-opaqueocean">Used technologies:</span><br>html, css, javascript, React.js, parallax, styled-components, react-router-dom</p>
                 </div>
             </div>
         </div>
 
         <div class="container-lg mt-5">
             <div class="row gap-2">
-                <div class="col-10-xs col-8-md my-5" data-rellax-percentage="0.5">
-                    <a href="https://mjsz-scss-portfolio.netlify.app">
-                        <img src="./assets/raven.png" class="img-fluid" alt="scss preview site">
-                    </a>
+                <div class="col-10-xs col-8-md my-5">
+                    <div class="card preview" data-aos="fade-up">
+                        <a target="_blank" href="https://mjsz-scss-portfolio.netlify.app">
+                            <img src="./assets/raven.png" class="img-fluid" alt="scss preview site">
+                        </a>
+                    </div>
+                    
                     
                     <div class="row g-5 justify-content-between align-items-center">
-                        <div class="col-9">
+                        <div class="col-9" data-aos="fade-up">
                             <h3 class="display-2 m-1 text-opaqueocean">Raven SCSS</h3>
                         </div>
 
-                        <div class="col-3">
-                            <p class="display-7 m-1"><a class="hover-link" href="">code</a></p>
+                        <div class="col-3" data-aos="fade-up" data-aos-delay="500">
+                            <p class="display-7 m-1"><a class="hover-link" target="_blank" href="https://github.com/vroeN2/sass-learning-project">code</a></p>
                         </div>
                     </div>
 
-                    <p class="display-5 m-1 text-white lead">Simple page created to practice scss usage</p>
+                    <p class="display-5 m-1 text-white lead" data-aos="fade-up" data-aos-delay="600">Simple page created to practice scss usage</p>
 
-                    <p class="display-6 m-1 text-white"><span class="text-opaqueocean">Used technologies:</span><br>html, css, bootstrap 5</p>
+                    <p class="display-6 m-1 text-white" data-aos="fade-up" data-aos-delay="700"><span class="text-opaqueocean">Used technologies:</span><br>html, css, bootstrap 5</p>
                 </div>
             </div>
         </div>
 
         <div class="container-lg mt-5">
             <div class="row gap-2">
-                <div class="col-10-xs col-8-md my-5" data-rellax-percentage="0.5">
-                    <a href="https://mjsz-bootstrap.netlify.app">
-                        <img src="./assets/bootstrap.png" class="img-fluid" alt="scss preview site">
-                    </a>
+                <div class="col-10-xs col-8-md my-5">
+                    <div class="card preview" data-aos="fade-up">
+                        <a target="_blank" href="https://mjsz-bootstrap.netlify.app">
+                            <img src="./assets/bootstrap.png" class="img-fluid" alt="scss preview site">
+                        </a>
+                    </div>                    
                     
                     <div class="row g-5 justify-content-between align-items-center">
-                        <div class="col-9">
+                        <div class="col-9" data-aos="fade-up">
                             <h3 class="display-2 m-1 text-opaqueocean">bootstrap tutorial page</h3>
                         </div>
 
-                        <div class="col-3">
-                            <p class="display-7 m-1"><a class="hover-link" href="">code</a></p>
+                        <div class="col-3" data-aos="fade-up" data-aos-delay="500">
+                            <p class="display-7 m-1"><a class="hover-link" target="_blank" href="https://github.com/vroeN2/bootstrap-5-tutorial">code</a></p>
                         </div>
                     </div>
                     
-                    <p class="display-5 m-1 text-white lead">webpage created as a result of bootstrap 5 tutorial</p>
+                    <p class="display-5 m-1 text-white lead" data-aos="fade-up" data-aos-delay="600">webpage created as a result of bootstrap 5 tutorial</p>
                     
-                    <p class="display-6 m-1 text-white"><span class="text-opaqueocean">used technologies:</span><br>html, css, bootstrap 5</p>
+                    <p class="display-6 m-1 text-white" data-aos="fade-up" data-aos-delay="700"><span class="text-opaqueocean">Used technologies:</span><br>html, css, bootstrap 5</p>
                 </div>
             </div>
         </div>
 
         <div class="container-lg mt-5">
             <div class="row gap-2">
-                <div class="col-10-xs col-8-md my-5" data-rellax-percentage="0.5">
-                    <a href="https://mjsz-react.netlify.app">
-                        <img src="./assets/blog_react.png" class="img-fluid" alt="scss preview site">
-                    </a>
+                <div class="col-10-xs col-8-md my-5">
+                    <div class="card preview" data-aos="fade-up">
+                        <a target="_blank" href="https://mjsz-react.netlify.app">
+                            <img src="./assets/blog_react.png" class="img-fluid" alt="scss preview site">
+                        </a>
+                    </div>
                     
                     <div class="row g-5 justify-content-between align-items-center">
-                        <div class="col-9">
+                        <div class="col-9" data-aos="fade-up">
                             <h3 class="display-2 m-1 text-opaqueocean">Raven Blog</h3>
                         </div>
 
-                        <div class="col-3">
-                            <p class="display-7 m-1"><a class="hover-link" href="">code</a></p>
+                        <div class="col-3" data-aos="fade-up" data-aos-delay="500">
+                            <p class="display-7 m-1"><a class="hover-link" target="_blank" href="https://github.com/vroeN2/full-react-tutorial">code</a></p>
                         </div>
                     </div>
 
-                    <p class="display-5 m-1 text-white lead">Blog page made with React.js and JSON server</p>
+                    <p class="display-5 m-1 text-white lead" data-aos="fade-up" data-aos-delay="600">Blog page made with React.js and JSON server</p>
 
-                    <p class="display-6 m-1 text-white"><span class="text-opaqueocean">Used technologies:</span><br>html, css, javascript, json, json server, React.js</p>
+                    <p class="display-6 m-1 text-white" data-aos="fade-up" data-aos-delay="700"><span class="text-opaqueocean">Used technologies:</span><br>html, css, javascript, json, json server, React.js</p>
                 </div>
             </div>
         </div>
@@ -153,8 +164,9 @@
         <div class="container-lg mt-5">
             <div class="row justify-content-center">
                 <div class="col-12-xs col-10-md mb-2">
-                    <div class="display-4 text-white position-relative align-items-center mb-5 rellax" data-rellax-percentage="0.1" data-rellax-speed="1.1">
-                        <div class="display-bg-xl text-opaqueocean outline-bg-text position-absolute rellax" data-rellax-percentage="0.5" data-rellax-speed="1.2">get in touch</div>
+                    <div class="display-4 text-white position-relative align-items-center mb-5 rellax" data-rellax-percentage="0.1" data-rellax-speed="1.1" data-aos="fade-up">
+                        <div class="display-bg-xl text-opaqueocean outline-bg-text position-absolute rellax" data-rellax-percentage="0.5" data-rellax-speed="1.2" data-aos="fade-down">get in touch</div>
+
                         drop me a message and let's talk!
                     </div>
                 </div>
@@ -165,20 +177,20 @@
     <section id="contact" class="mt-1">
         <div class="container">
             <div class="row my-0 g-0 align-items-center justify-content-center">
-                <div class="col-6 col-md-3 text-center">
+                <div class="col-6 col-md-3 text-center" data-aos="fade-down">
                     <a href="mailto:mjszachariasz@gmail.com" class="display-6 hover-link text-white">mail</a>
                 </div>
                 
-                <div class="col-6 col-md-3 text-center">
-                    <a href="https://www.linkedin.com/in/maciej-zachariasz/" class="display-6 hover-link text-white">linkedin</a>
+                <div class="col-6 col-md-3 text-center" data-aos="fade-down">
+                    <a target="_blank" href="https://www.linkedin.com/in/maciej-zachariasz/" class="display-6 hover-link text-white">linkedin</a>
                 </div>
 
-                <div class="col-6 col-md-3 text-center">
-                    <a href="https://github.com/vroeN2" class="display-6 hover-link text-white">github</a>
+                <div class="col-6 col-md-3 text-center" data-aos="fade-down">
+                    <a target="_blank" href="https://github.com/vroeN2" class="display-6 hover-link text-white">github</a>
                 </div>
 
-                <div class="col-6 col-md-3 text-center">
-                    <a href="https://bitbucket.org/vroeN_/" class="display-6 hover-link text-white">bitbucket</a>
+                <div class="col-6 col-md-3 text-center" data-aos="fade-down">
+                    <a target="_blank" href="https://bitbucket.org/vroeN_/" class="display-6 hover-link text-white">bitbucket</a>
                 </div>
             </div>
         </div>
@@ -190,15 +202,20 @@
         </div>
     </section>
 
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+        <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci repudiandae atque natus velit consequatur tempora praesentium tempore, modi quidem nobis.</p>
+    </div>
+
     <!-- 
         
         guzik do zmiany języka 
-        smooth scrolling
-        mobilne kolory do poprawy
         alternatywny kursor
+        animacje podglądu projektów (paralax?)
+        custom scroillbar
     
     -->
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -212,6 +229,8 @@
         var rellax = new Rellax('.rellax', {
             center:true
         });
+
+        AOS.init();
     </script>
 </body>
 
