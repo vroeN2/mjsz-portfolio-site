@@ -11,8 +11,6 @@
 }
 
 body {
-    cursor: url('../assets/cursor.png') 1 1, none;
-
     &::-webkit-scrollbar {
         width: 0.25rem;
 
@@ -24,10 +22,6 @@ body {
             background: $opaqueocean;
         }
     }
-}
-
-.offcanvas:hover {
-    cursor: url('../assets/cursor2.png') 1 1, none;
 }
 
 .logo {
