@@ -22,21 +22,31 @@
 <body class="bg-darkgrey">
     <nav class="navbar">
         <div class="container-xxl">
-            <a href="#sidebar" class="d-block hover-link logo fw-bold mt-2" data-bs-toggle="offcanvas" role="button" data-bs-target="#sidebar" aria-controls="sidebar">
+            <a href="#other-sidebar" class="d-block hover-link logo fw-bold mt-2" data-bs-toggle="offcanvas" role="button" data-bs-target="#other-sidebar" aria-controls="other-sidebar">
                 mjsz portfolio
             </a>
         </div>
     </nav>
 
-    <section class="about">
+    <section class="about position-relative">
+        <div class="container d-none d-md-block invisible" id="photo">
+            <img src="./assets/photo.jpg" alt="that's just me" class="img-fluid">
+        </div>
+
         <div class="container-lg rellax" id="about">
             <div class="row justify-content-center">
                 <div class="col-12-xs col-10-md" data-aos="fade-up">
-                    <span class="display-1 text-white rellax mb-2 d-inline-block" data-rellax-speed="1.2" data-rellax-percentage="0.5">oi.</span>
+                    <span class="display-1 text-white rellax mb-2 d-inline-block" data-rellax-speed="1.2" data-rellax-percentage="0.5">oi!</span>
 
-                    <p class="display-5 text-white rellax" data-rellax-speed="1.7" data-rellax-percentage="0.5">I'm <a href="#" class="hover-link text-white">Maciej</a>, and I am a front-end dev.</p>
+                    <p class="display-5 text-white rellax" data-rellax-speed="1.7" data-rellax-percentage="0.5">I'm <a href="#" class="hover-link text-white" id="name">Maciej</a>, and I am a front-end dev.</p>
 
                     <p class="display-5 text-opaqueocean rellax" data-rellax-speed="2" data-rellax-percentage="0.5">currently I'm focused on learning new technologies.<br>I love reading, board games, calisthenics and basketball.</p>
+
+                    <p class="display-5 text-white rellax" data-rellax-speed="2.2" data-rellax-percentage="0.5">
+                        <a href="#skills-sidebar" class="hover-link mt-2" data-bs-toggle="offcanvas" role="button" data-bs-target="#skills-sidebar" aria-controls="skills-sidebar">
+                            my stack
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -58,7 +68,7 @@
         <div class="container-lg mt-5">
             <div class="row gap-2">
                 <div class="col-10-xs col-8-md my-5">
-                    <div class="card preview" data-aos="fade-up">
+                    <div class="card preview" data-aos="fade-up" data-aos-delay="500">
                         <a target="_blank" href="https://mjsz-portfolio-project.netlify.app">
                             <img src="./assets/portfolio_react.png" class="img-fluid" alt="scss preview site">
                         </a>
@@ -70,7 +80,7 @@
                         </div>
 
                         <div class="col-3" data-aos="fade-up" data-aos-delay="500">
-                            <p class="display-7 m-1"><a class="hover-link" target="_blank" href="https://bitbucket.org/vroeN_/project-01-remaster/src/dev/">code</a></p>
+                            <p class="display-7 m-1"><a class="hover-link" target="_blank" href="https://bitbucket.org/vroeN_/project-01-remaster/src/dev/">repo</a></p>
                         </div>
                     </div>
 
@@ -84,7 +94,7 @@
         <div class="container-lg mt-5">
             <div class="row gap-2">
                 <div class="col-10-xs col-8-md my-5">
-                    <div class="card preview" data-aos="fade-up">
+                    <div class="card preview" data-aos="fade-up" data-aos-delay="500">
                         <a target="_blank" href="https://mjsz-scss-portfolio.netlify.app">
                             <img src="./assets/raven.png" class="img-fluid" alt="scss preview site">
                         </a>
@@ -97,7 +107,7 @@
                         </div>
 
                         <div class="col-3" data-aos="fade-up" data-aos-delay="500">
-                            <p class="display-7 m-1"><a class="hover-link" target="_blank" href="https://github.com/vroeN2/sass-learning-project">code</a></p>
+                            <p class="display-7 m-1"><a class="hover-link" target="_blank" href="https://github.com/vroeN2/sass-learning-project">repo</a></p>
                         </div>
                     </div>
 
@@ -111,7 +121,7 @@
         <div class="container-lg mt-5">
             <div class="row gap-2">
                 <div class="col-10-xs col-8-md my-5">
-                    <div class="card preview" data-aos="fade-up">
+                    <div class="card preview" data-aos="fade-up" data-aos-delay="500">
                         <a target="_blank" href="https://mjsz-bootstrap.netlify.app">
                             <img src="./assets/bootstrap.png" class="img-fluid" alt="scss preview site">
                         </a>
@@ -123,7 +133,7 @@
                         </div>
 
                         <div class="col-3" data-aos="fade-up" data-aos-delay="500">
-                            <p class="display-7 m-1"><a class="hover-link" target="_blank" href="https://github.com/vroeN2/bootstrap-5-tutorial">code</a></p>
+                            <p class="display-7 m-1"><a class="hover-link" target="_blank" href="https://github.com/vroeN2/bootstrap-5-tutorial">repo</a></p>
                         </div>
                     </div>
                     
@@ -137,7 +147,7 @@
         <div class="container-lg mt-5">
             <div class="row gap-2">
                 <div class="col-10-xs col-8-md my-5">
-                    <div class="card preview" data-aos="fade-up">
+                    <div class="card preview" data-aos="fade-up" data-aos-delay="500">
                         <a target="_blank" href="https://mjsz-react.netlify.app">
                             <img src="./assets/blog_react.png" class="img-fluid" alt="scss preview site">
                         </a>
@@ -149,7 +159,7 @@
                         </div>
 
                         <div class="col-3" data-aos="fade-up" data-aos-delay="500">
-                            <p class="display-7 m-1"><a class="hover-link" target="_blank" href="https://github.com/vroeN2/full-react-tutorial">code</a></p>
+                            <p class="display-7 m-1"><a class="hover-link" target="_blank" href="https://github.com/vroeN2/full-react-tutorial">repo</a></p>
                         </div>
                     </div>
 
@@ -165,10 +175,10 @@
         <div class="container-lg mt-5">
             <div class="row justify-content-center">
                 <div class="col-12-xs col-10-md mb-2">
-                    <div class="display-4 text-white position-relative align-items-center mb-5 rellax" data-rellax-percentage="0.1" data-rellax-speed="1.1" data-aos="fade-up">
-                        <div class="display-bg-xl text-opaqueocean outline-bg-text position-absolute rellax" data-rellax-percentage="0.5" data-rellax-speed="1.2" data-aos="fade-down">get in touch</div>
-
-                        drop me a message and let's talk!
+                    <div class="display-4 text-white position-relative align-items-center mb-5">
+                        <div class="display-bg-xl text-opaqueocean outline-bg-text position-absolute"data-aos="fade-left" data-aos-delay="700">get in touch</div>
+                        
+                        <div data-aos="fade-right" data-aos-delay="1000">drop me a message and let's talk!</div>
                     </div>
                 </div>
             </div>
@@ -203,9 +213,9 @@
         </div>
     </section>
 
-    <div class="offcanvas offcanvas-end bg-opaqueocean text-white" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+    <div class="offcanvas offcanvas-end bg-opaqueocean text-white" tabindex="-1" id="skills-sidebar" aria-labelledby="skills-sidebar-label">
         <div class="offcanvas-header justify-content-center align-items-center">
-            <h5 class="offcanvas-title display-5 text-darkgrey" id="sidebar-label">
+            <h5 class="offcanvas-title display-5 text-darkgrey" id="skills-sidebar-label">
                 More about me
             </h5>
         
@@ -222,7 +232,7 @@
             </div>
 
             <h5 class="display-6">
-                coding skills
+                my tech stack
             </h5>
 
             <ul class="display-7 skillist">
@@ -242,7 +252,26 @@
                 <li>Microsoft Visual Studio</li>
                 <li>Sublime Text 3</li>
             </ul>
+        </div>
+    </div>
 
+    <div class="offcanvas offcanvas-end bg-opaqueocean text-white" tabindex="-1" id="other-sidebar" aria-labelledby="other-sidebar-label">
+        <div class="offcanvas-header justify-content-center align-items-center">
+            <h5 class="offcanvas-title display-5 text-darkgrey" id="other-sidebar-label">
+                More about me
+            </h5>
+        
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <h5 class="display-6">
+                contact
+            </h5>
+
+            <div class="display-7 mb-3">
+                <p><span class="text-darkgrey">mail </span>mjszachariasz@gmail.com</p>
+            </div>
             <h5 class="display-6">
                 other skills
             </h5>
@@ -285,7 +314,7 @@
         </div>
     </div>
 
-    
+    <script src="./scripts/photo.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

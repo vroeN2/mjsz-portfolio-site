@@ -11,21 +11,45 @@
 }
 
 body {
-    &::-webkit-scrollbar {
-        width: 0.25rem;
+  overflow-x: hidden;
 
-        &-track {
-            background: $darkgrey;
-        }
+  &::-webkit-scrollbar {
+    width: 0.25rem;
 
-        &-thumb {
-            background: $opaqueocean;
-        }
+    &-track {
+      background: $darkgrey;
     }
+
+    &-thumb {
+      background: $opaqueocean;
+    }
+  }
 }
 
 .logo {
   font-size: 1rem;
+}
+
+#photo {
+  transition: 0.3s opacity ease;
+  position: absolute;
+  user-select: none;
+  left: 50%;
+  top: -2%;
+}
+
+#sidebar {
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+
+    &-track {
+      background: $opaqueocean;
+    }
+
+    &-thumb {
+      background: $darkgrey;
+    }
+  }
 }
 
 .about {
