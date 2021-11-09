@@ -53,6 +53,19 @@
     }
   }
 
+  .skillist {
+      
+    & li {
+        list-style-type: none;
+
+        &:before {
+            content: "\2022";
+            margin-right: 8px;
+            color: $darkgrey;
+        }
+    }
+  }
+
 .outline-bg-text {
     top: -5rem;
 }
