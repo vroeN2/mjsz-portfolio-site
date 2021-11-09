@@ -7,6 +7,7 @@
   position: relative;
   outline: none;
   box-sizing: border-box;
+  text-transform: lowercase;
 }
 
 .logo {
@@ -77,13 +78,13 @@
     55% {height: 5px;}
     100% {
         transform: scaleX(1.05);
-        height: 3.5rem;
+        height: 100%;
        }
   }
   @keyframes no-hover-v {
     0% {
         transform: scaleX(1.05);
-        height: 3.8rem;
+        height: 100%;
        }
     45% {height: 5px;}
     55% {   
